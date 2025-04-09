@@ -8,38 +8,19 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
-        String name = "michel";
-        int pinCode = 1337;
-        int input;
-
-        System.out.println("hej " + name + " skriv in din pinkod");
-        input = sc.nextInt();
+        System.out.println("hej. skriv en månad");
 
 
- //
+        String input = sc.nextLine();
+        switch (input.toLowerCase()) {  // input.toLowerCase förvandlar alla till små bokstäver
 
+            // ska man ha in int eller double så ska man inte ha "täcken" för skriv bara siffran rätt ut
+            case "januari", "mars", "juli", "augusti", "oktober", "december" -> System.out.println("31");
+            case "april", "juni", "september", "november" -> System.out.println("30");
+            case "februari" -> System.out.println("28");
 
-
-/*        do{
-            System.out.println("felkod");
-            input = sc.nextInt();
-        }while (input != pinCode);*/
-
-
-        while (input != pinCode) {
-            System.out.println("fel kod");
-            input = sc.nextInt();
+            default -> System.out.println("Fel input");
         }
-        System.out.println("rätt kod");
-
-
-/*        if (input == pinCode) {
-            System.out.println("du har rätt kod");
-        } else {
-            System.out.println("du har fel kod");
-
-        }*/
 
 
     }
