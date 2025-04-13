@@ -1,6 +1,8 @@
 package se.lexicon;
 import java.util.Scanner;
-// https://www.youtube.com/watch?v=mMK6l5-nbFM Faceit
+
+// Faceit
+// https://www.youtube.com/watch?v=mMK6l5-nbFM 
 
 
 public class Main {
